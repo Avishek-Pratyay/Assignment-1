@@ -11,13 +11,14 @@ body{color:#0f172a}
 .navbar{
   display:flex;
   justify-content:space-between;
+  font-weight: bold;
   align-items:center;
   padding:20px 80px;
 }
 
 .navbar nav a{
   margin:0 16px;
-  font-weight:500;
+  font-weight:600;
   color:#0f172a;
   text-decoration:none;
 }
@@ -58,10 +59,10 @@ body{color:#0f172a}
 }
 
 .badge{
-  background:#f2efef;
+  background:#fbfbfb;
   padding:10px 16px;
   border-radius:18px;
-  font-size:14px;
+  font-size:15px;
 
 }
 .hero  .badge{
@@ -178,25 +179,66 @@ body{color:#0f172a}
 }
 
 /* FOOTER */
-footer{
-  background:#020617;
-  color:#cbd5e1;
-  padding:60px 80px;
+/* ================= FOOTER ================= */
+
+.footer{
+  background:linear-gradient(180deg, #03162f 0%, #020617 100%);
+  padding:60px 80px 40px;
+  color:#e5e7eb;
 }
 
+/* TOP ROW */
 .footer-top{
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  align-items:flex-start;
 }
 
-.social img{margin-left:12px}
-
-hr{
-  border:none;
-  border-top:1px solid #1e293b;
-  margin:30px 0;
+/* LOGO */
+.footer-logo{
+  width:140px;
 }
-.footer p{
-    text-align: center;
+
+/* SOCIAL */
+.footer-right{
+  text-align:right;
+
+}
+
+.social-title{
+  font-weight:600;
+  margin-bottom:12px;
+  color:#ffffff;
+}
+
+.social-icons{
+  display:flex;
+  gap:14px;
+  justify-content:flex-end;
+}
+
+.social-icons img{
+  width:20px;
+  border-radius: 50%;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.social-icons img:hover{
+  transform:translateY(-3px);
+  opacity:0.85;
+}
+
+/* DIVIDER */
+.footer-divider{
+  height:1px;
+  background:#1e293b;
+  margin:40px 0 20px;
+}
+
+/* COPYRIGHT */
+.footer-copy{
+  text-align:center;
+  font-size:14px;
+  color:#cbd5e1;
 }
