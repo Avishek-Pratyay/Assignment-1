@@ -1,3 +1,9 @@
+
+.font-inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 *{
   margin:0;
   padding:0;
@@ -109,6 +115,9 @@ body{color:#0f172a}
   padding:30px;
   box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
+.note-card h4{
+    margin-bottom: 15px;
+}
 
 .note-card img{
     background-color: red;
@@ -132,11 +141,15 @@ body{color:#0f172a}
     font-weight:600;
     font-size:16px;
 }
+.brain .tag{
+    margin-top: 16px;
+    display: inline-block;
+}
 
-.brain-text h1{margin-top: 150px;}
+.brain-text h1{margin-top: 15px;}
 
 .brain-text p{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0 px;
     margin-right: 250px;
     text-align: justify;}
@@ -148,6 +161,26 @@ body{color:#0f172a}
 .brain-text li{
   margin-bottom:10px;
   color:#334155;
+}
+.brain-text{
+    margin-top: 80px;
+}
+
+/* Second Brain checklist */
+
+.check-list{
+  list-style: none;        /* remove default dots */
+  padding: 0;
+  margin-top: 20px;
+}
+
+.check-list li{
+  background: url(assets/CheckCircle.png) no-repeat left center;
+  background-size: 20px 20px;   /* size of icon */
+  padding-left: 32px;           /* space for icon */
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #334155;
 }
 
 /* CTA */
